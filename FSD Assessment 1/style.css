@@ -10,7 +10,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 min-height: 100vh;
-background-image: url(/image.webp);
+background: url("https://thumbs.dreamstime.com/b/gradient-galaxy-sky-silhouette-forest-trees-landscape-phone-hd-wallpaper-ai-generated-violet-pink-331078179.jpg");
 background-size: cover;
 background-position: center;
 }
@@ -46,6 +46,8 @@ background-position: center;
     font-size: 16px;
     color: #fff;
     padding: 20px 45px 20px 20px;
+    cursor: pointer;
+    filter: drop-shadow(0 0 10px #fffdef);
 }
 .input-box input::placeholder{
     color: #fff;
