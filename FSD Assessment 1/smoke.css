@@ -1,0 +1,34 @@
+body{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 1rem;
+    min-height: 100vh;
+    font-weight: 700;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTnRDkdxciurXCDNZiYxproDvfr0vIJnbnXz3D29_fw0Sb7F8J8BifzyXCA7JG-Tx-JuI&usqp=CAU");
+    background-repeat: no-repeat;
+    background-size: 800px, 200px;
+    background-position:center;
+    background-color: rgb(15, 15, 15);
+}
+.wrapper p{
+    font-family: 'Times New Roman', Times, serif;
+    background-image:  url("https://static.vecteezy.com/system/resources/thumbnails/051/265/842/small/a-green-and-blue-smoke-is-shown-in-the-air-photo.jpeg");
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+svg{
+    position: absolute;
+}
+.wrapper {
+position: relative;
+width: 100;
+text-align: center;
+& p {
+    font-size: 10rem;
+}
+}
