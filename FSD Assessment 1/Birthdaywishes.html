@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Wish Card</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: url("https://c8.alamy.com/comp/RT6H9R/fun-happy-birthday-template-illustration-RT6H9R.jpg") no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+        .card {
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            position: relative;
+            z-index: 1;
+            overflow: hidden;
+        }
+        @keyframes animate{
+            0%{
+                transform: rotate(0deg);
+            }
+            100%
+            {
+                transform: rotate(360deg);
+            }
+        }
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(236, 6, 6, 0.911);
+        }
+        .card h1 {
+            color: #333;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .card p {
+            color: #777;
+        }
+        .card .message {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px dashed #ee0b0b;
+            border-radius: 5px;
+            background-color: #f1f1f1;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .card .footer {
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #999;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        .balloon {
+            width: 50px;
+            height: 70px;
+            background-color: #ff6f61;
+            border-radius: 50% 50% 50% 50%;
+            position: absolute;
+            bottom: -80px;
+            animation: float 6s ease-in-out infinite;
+        }
+        .balloon:nth-child(2) {
+            left: 20%;
+            animation-delay: 2s;
+            background-color: #6fa8dc;
+        }
+        .balloon:nth-child(3) {
+            left: 50%;
+            animation-delay: 4s;
+            background-color: #93c47d;
+        }
+        .balloon:nth-child(4) {
+            left: 80%;
+            animation-delay: 6s;
+            background-color: #1d0df5;
+        }
+        @keyframes float {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-200px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="balloon"></div>
+    <div class="balloon"></div>
+    <div class="balloon"></div>
+    <div class="balloon"></div>
+    <div class="card">
+        <h1>Happy Birthday!</h1>
+        <p>Wishing you a day filled with love, joy, and happiness.</p>
+        <div class="message">
+            <p>May all your dreams come true. Have a fantastic birthday!</p>
+        </div>
+        <div class="footer">
+            <p>&copy; 2025 Birthday Wishes</p>
+        </div>
+    </div>
+</body>
+</html>
